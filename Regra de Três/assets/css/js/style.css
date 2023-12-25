@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --cor-primaria: #ffe53bd8;
+    --cor-secundaria: #ff6a25da;
+
+    --cor-neutra-1: #e5e7eb;
+    --cor-neutra-2: #343434;
+    --cor-neutra-3: #262626;
+
+    --linear-gradiente: linear-gradient(120deg, var(--cor-primaria), var(--cor-secundaria));
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: var(--linear-gradiente);
+}
+
+.calculator {
+    background-color: var(--cor-neutra-3);
+    color: var(--cor-neutra-1);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 323);
+    padding: 25px;
+    text-align: center;
+}
+
+.input-container{
+    margin: 25px 0px;
+}
+
+.input-group{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.input-group input {
+    background-color: var(--cor-neutra-2);
+    color: var(--cor-neutra-1);
+    padding: 8px;
+    border: 1px solid var(--cor-primaria);
+    border-radius: 4px;
+    width: 100px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.input-group input:focus-visible{
+    outline: transparent;
+}
+
+.input-group span {
+    background-color: var(--cor-neutra-2);
+    padding: 0 15px;
+}
+
+.input-group p {
+    background: var(--linear-gradiente);
+    width: 100px;
+    border-radius: 4px;
+    padding: 10px;
+}
+
+.input-text{
+    margin: 15px 0px;
+}
+
+#calculate {
+    background: var(--linear-gradiente);
+    border: none;
+    color: var(--cor-neutra-1);
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+#calculate:hover{
+    background-color: var(--cor-secundaria);
+}
